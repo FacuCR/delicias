@@ -1,0 +1,3 @@
+com\delicias\product\interfaces\controller\ProductController.class
+com\delicias\config\SwaggerConfig.class
+com\delicias\DeliciasApplication.class
