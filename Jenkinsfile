@@ -33,14 +33,5 @@ pipeline {
 //                 }
 //             }
 //         }
-
-        stage('SonarQube Analysis') {
-            steps {
-                script {
-                    // Comandos para ejecutar análisis de SonarQube (usando Maven en este caso)
-                    bat 'mvn sonar:sonar'
-                }
-            }
-        }
     }
 }
