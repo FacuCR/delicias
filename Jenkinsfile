@@ -8,20 +8,20 @@ pipeline {
             }
         }
 
-        stage('Test') {
-                    steps {
-                        script {
-                            // Comandos para ejecutar pruebas unitarias (usando Maven en este caso)
-                            bat 'mvn test'
-                        }
-                    }
-                }
-
         stage('Build') {
             steps {
                 script {
                     // Comandos para construir el proyecto (usando Maven en este caso)
                     bat 'mvn clean install'
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                script {
+                    // Comandos para ejecutar pruebas unitarias (usando Maven en este caso)
+                    bat 'mvn test'
                 }
             }
         }
